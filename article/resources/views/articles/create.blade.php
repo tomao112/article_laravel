@@ -4,7 +4,7 @@
 
 <form action="{{ route('articles.store') }}" method="POST">
     @include('articles.form')
-    <button type="submit">投稿する</button>
-    <a href="{{ route('articles.index') }}">キャンセル</a>
+    <button class="create_button" type="submit">投稿する</button>
+    <a class="create_a" href="{{ route('articles.index') }}">キャンセル</a>
 </form>
 @endsection

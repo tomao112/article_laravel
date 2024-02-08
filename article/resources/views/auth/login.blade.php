@@ -1,17 +1,18 @@
 @extends('layouts.app')
 @section('content')
     
-<h1>ログイン</h1>
-@include('commons.errors')
-<form action="{{ route('login') }}" method="POST">
-    @csrf
-    <dl>
-        <dt>メールアドレス</dt>
-        <dd><input type="email" name="email" value="{{ old('email') }}"></dd>
-        <dt>パスワード</dt>
-        <dd><input type="password" name="password"></dd>
-    </dl>
-    <button type="submit">ログイン</button>
-    <a href="/">キャンセル</a>
-</form>
+<div class="login">
+    @include('commons.errors')
+    <form action="{{ route('login') }}" method="POST">
+        @csrf
+        <div class="login_menu">
+            {{-- <h1 class="login_title">ログイン</h1> --}}
+            <input type="email" name="email" value="{{ old('email') }}" placeholder="email">
+            <input type="password" name="password" placeholder="password">
+        </div>
+        <div class="login_button">
+            <button type="submit">ログイン</button>
+        </div>
+    </form>
+</div>
 @endsection()

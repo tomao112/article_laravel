@@ -1,0 +1,229 @@
+/* ----------------------------------------- */
+/* メインビジュアル */
+body {
+    margin: 0;
+}
+
+main {
+    margin-bottom: 5rem;
+}
+
+.header_visual {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a1d8e2;
+}
+
+.main_a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+.menu {
+    margin-right: 3rem;
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-right: 3rem;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* ---------------------------------------------- */
+/* ログイン画面 */
+.login {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 14rem;
+}
+
+.login_title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+input {
+    display: flex;
+    margin-bottom: 1rem;
+    height: 3rem;
+    width: 20rem;
+}
+
+.login_button button{
+    appearance: none;
+    border: 0;
+    border-radius: 3px;
+    background: #4676D7;
+    color: #fff;
+    padding: 0.8rem 8.2rem;
+    font-size: 1rem;
+}
+
+/* ---------------------------------------------- */
+/* マイページ */
+.write {
+    text-decoration: none;
+    color: black;
+}
+
+/* ------------------------------------------------ */
+/* 記事検索画面 */
+.article_title a {
+    text-decoration: none;
+    color: #4676D7;
+    font-size: 1.5rem;
+}
+
+.article_item {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid gray;
+}
+
+.c-button {
+    margin-bottom: 1rem;
+}
+
+/* ------------------------------------------------- */
+/* 投稿画面 */
+.create {
+    margin: 2rem 3rem;
+}
+
+.create_title{
+    height: 2rem;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.create_text {
+    margin-top: 1rem;
+    height: 30rem;
+    width: 50rem;
+    font-size: 1rem;
+}
+
+.create_title:focus {
+    outline: black 1px solid;
+}
+
+.create_text:focus {
+    outline: black 1px solid;
+}
+
+.create_button {
+    appearance: none;
+    border: 0;
+    border-radius: 3px;
+    background: #4676D7;
+    color: #fff;
+    padding: 0.8rem 8.2rem;
+    font-size: 1rem;
+    margin-left: 8rem;
+}
+
+.create_a {
+    appearance: none;
+    border: 0;
+    border-radius: 3px;
+    background: #ff3d3d;
+    color: #fff;
+    padding: 0.8rem 8.2rem;
+    font-size: 1rem;
+    margin-left: 3rem;
+    text-decoration: none;
+}
+
+/* -------------------------------------------------- */
+/* エラーメッセージ */
+.alert {
+padding: 15px 15px 15px 40px;
+border-radius: 4px;
+background: #f8d6d9;
+color: #721c24;
+margin: 2rem;
+}
+
+/* --------------------------------------------------- */
+/* 記事詳細画面 */
+.detail_main {
+    display: flex;
+}
+.detail_content {
+    text-align: center;
+    margin: 0 5rem;
+}
+
+.detail_item {
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.show_button {
+    appearance: none;
+    border: 0;
+    border-radius: 3px;
+    background: #ff3d3d;
+    color: #fff;
+    padding: 0.5rem 3rem;
+    margin-top: 2rem;
+    font-size: 1rem;
+}
+
+.show_a {
+    appearance: none;
+    border: 0;
+    border-radius: 3px;
+    background: #4676D7;
+    color: #fff;
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+/* ----------------------------------------------- */
+/* 編集画面 */
+.edit_button {
+    appearance: none;
+    border: 0;
+    border-radius: 3px;
+    background: #4676D7;
+    color: #fff;
+    padding: 0.5rem 3rem;
+    margin-top: 2rem;
+    margin-left: 6rem;
+    font-size: 1rem;
+}
+
+.edit_a {
+    appearance: none;
+    border: 0;
+    border-radius: 3px;
+    background: #ff3d3d;
+    color: #fff;
+    padding: 0.5rem 3rem;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+/* ------------------------------------------------ */
+/* ログアウト */
+.logout {
+    appearance: none;
+    border: 0;
+    color: #fff;
+    background: #a1d8e2;
+    font-size: 1rem;
+    text-decoration: none;
+}

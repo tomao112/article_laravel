@@ -8,10 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <a href="/">記事投稿アプリ</a>
+    <header class="header_visual">
+        <a class="main_a" href="/">記事投稿アプリ</a>
         <nav>
-            <ul>
+            <ul class="menu">
                 @if (Auth::check())
                 <li><a class="tab_item{{ Request::is('home') ? 'active' : '' }}" href="{{ route('home') }}">マイページ</a></li>
                 <li><a class="tac_item{{ Request::is('articles') ? 'active' : '' }}" href="{{ route('articles.index') }}">記事検索</a></li>
@@ -19,7 +19,7 @@
                 <li>
                     <form onsubmit="return confirm('ログアウトしますか？')" action="{{ route('logout') }}" method="POST">
                     @csrf
-                    <button type="submit">ログアウト</button>
+                    <button class="logout" type="submit">ログアウト</button>
                     </form>
                 </li>        
                 @else
@@ -33,9 +33,5 @@
     <main>
         @yield('content')
     </main>
-
-    <footer>
-        &copy; 記事投稿アプリ
-    </footer>
 </body>
 </html>
