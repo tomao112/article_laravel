@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="header_visual">
-        <a class="main_a" href="/">記事投稿アプリ</a>
+        <a class="main_a" href="/">記事投稿</a>
         <nav>
             <ul class="menu">
                 @if (Auth::check())
